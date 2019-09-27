@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <style>
+  input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+
+  border: 1px solid rgb(41, 19, 19);
+}
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+
+  border: 1px solid rgb(41, 19, 19);
+}
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(41, 19, 19);
+}
+input[type=submit] {
+  width: 100%;
+  background-color:rgb(100, 55, 13);
+  color: white;
+  padding: 14px 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #b4a658;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+  </head>
+
+
+<body>
+
+<script>  
+function myfun()
+{
+alert("sign in successfully");
+}
+
+function validateform(){  
+
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+var passwordR=document.myform.passwordR.value;
+  
+
+
+if (name==null || name==""){  
+
+  alert("Name can't be blank");  
+
+  return false;  
+
+}
+else if(password.length<6){  
+
+  alert("Password must be at least 6 characters long.");  
+
+  return false;  
+
+   
+
+} 
+
+
+else if (passwordR!=password){  
+
+    alert("Password doesn't match!"); 
+
+    return false;  
+
+  
+
+}
+else
+{
+  return myfun();
+}
+
+
+
+}
+
+</script>  
+
+<body>  
+
+<form name="myform" method="post" onsubmit="return validateform()" > 
+
+
+Name: <input type="text" name="name"><br/>  
+
+Contact: <input type="text" name="phone"><br/>  
+
+Email: <input type="email" name="email"><br/>  
+
+Adress: <input type="text" name="adress"><br/>  
+
+Password: <input type="password" name="password"><br/>  
+
+Confirm Password: <input type="password" name="passwordR"><br/>  
+
+<input type="submit" value="register" >  
+
+</form>  
+
+</body>
+
+</html>

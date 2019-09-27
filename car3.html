@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Car Model</title>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  .fadeInDown {
+      -webkit-animation-name: fadeInDown;
+      animation-name: fadeInDown;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #2587bb;
+  border: none;
+  color: rgb(184, 8, 8);
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #2384b1;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] {
+  background-color: #cecec8de;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 75%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+input[type=text]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type=text]:placeholder {
+  color: #f8f6f6;
+}
+
+    
+    @-webkit-keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+    
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+    
+    /* Simple CSS3 Fade-in Animation */
+    @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    
+    .fadeIn {
+      opacity:0;
+      -webkit-animation:fadeIn ease-in 1;
+      -moz-animation:fadeIn ease-in 1;
+      animation:fadeIn ease-in 1;
+    
+      -webkit-animation-fill-mode:forwards;
+      -moz-animation-fill-mode:forwards;
+      animation-fill-mode:forwards;
+    
+      -webkit-animation-duration:1s;
+      -moz-animation-duration:1s;
+      animation-duration:1s;
+    }
+    
+    .fadeIn.first {
+      -webkit-animation-delay: 0.4s;
+      -moz-animation-delay: 0.4s;
+      animation-delay: 0.4s;
+    }
+    
+    .fadeIn.second {
+      -webkit-animation-delay: 0.6s;
+      -moz-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+    }
+    
+    .fadeIn.third {
+      -webkit-animation-delay: 0.8s;
+      -moz-animation-delay: 0.8s;
+      animation-delay: 0.8s;
+    }
+    
+    .fadeIn.fourth {
+      -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      animation-delay: 1s;
+    }
+    
+    /* Simple CSS3 Fade-in Animation */
+    .underlineHover:after {
+      display: block;
+      left: 0;
+      bottom: -10px;
+      width: 0;
+      height: 2px;
+      background-color: #56baed;
+      content: "";
+      transition: width 0.2s;
+    }
+    
+    .underlineHover:hover {
+      color: #0d0d0d;
+    }
+    
+    .underlineHover:hover:after{
+      width: 100%;
+    }
+    
+
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #ebecec;
+    color: #faf5f5;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href=""><b>CIAZ</b></a>
+      <a class="navbar-brand" href="#icon"><button >log in</button></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#car3.html">HOME</a></li>
+        <li><a href="carmodel.html">MODELS</a></li>
+        <li><a href="carabout.html">ABOUT</a></li>
+        <li><a href="complaint.html">COMPLAINTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">BRANCHES</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="carciaz.jpg"  width="1200px" height="700px">
+        <div class="carousel-caption">
+          <p></p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="carr.jpg" alt="Chicago" width="1200px" height="700px">
+        <div class="carousel-caption">
+          <p></p>
+        </div>      
+      </div>
+    
+         <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<div style="width: 100%;background-color: rgb(247, 131, 237)">
+  <P style="text-shadow:rgb(22, 21, 21);text-align:right;position: relative;"><b>LATEST NEWS</b></P>
+<marquee dir="left" width=80%><p style="color: rgb(65, 11, 11)"><b>CIAZ S-PRESSO COMING SOON...</b>><a href="news.html">more</a></p>
+			</marquee>
+</div>
+
+<div class="container text-center">
+  <h3>CIAZ</h3>
+  <p><em>Precision Crafted Performance.</em></p>
+  <p>Suzuki Ciaz is available in both diesel and petrol variants. It is being offered with a 1.5 litre K-Series petrol engine and a 1.6 litre VVT exclusively for the Chinese market and 1.5 litre diesel engine. The diesel-engined SHVS model had a combustible consumption rate above 28.09 km/L while the fuel version consumption average was 20.73 km/L according to ARAI.[2] The power (BHP) rating will be 91.18 (Petrol) and 88.76 (Diesel). The torque (NM) will be 130 (Petrol) and 200 (Diesel). The Car's petrol version will also have an automatic transmission option, the same currently used in the SX4 Automatic.
+    It comes with features like projector headlamps, new 16 inch alloy wheels, key-less entry, window blinds, a touchscreen infotainment system, rear parking camera, automatic climate control, ABS with EBD and two airbags, rear AC vents, push button stop-start system, etc. The Chinese version of Ciaz; known under the Alivio name; has sunroof as an extra feature.[3]
+    In Thailand, the Ciaz is equipped with a 1.2 litre engine, as to conform with the country Eco Car regulation.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Maruti S-CROSS</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src=" scross.png" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p style="text-align:center">Adorned with a vertical chrome-tipped grille,<br>LED projector headlamps and machined alloy wheels,<br>the S-Cross stands out with its bold and masculine stance.<br></p>      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Baleno</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="ba.png" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p style="text-align:center">The New Baleno is now bolder.<br> With an enhanced exterior,<br> this stunning hatchback is here to take the roads by storm.<br></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Ignis</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="ig.png" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p style="text-align:center">Spacious inside, compact outside.<br> Ignis is peppy, manoeuvrable and easy to park,<br> letting you cruise with ease wherever you go.<br></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div class="bg-1" >
+  <div class="container">
+    <h3 class="text-left"><h2>LOG IN</h2><hr>
+    <p class="left"><a href="form.html" target="_self">create an account</a></p>
+    <div class="fadeIn first">
+        
+      </div>
+  
+      <!-- Login Form -->
+      <div class="wrapper fadeInDown">
+          <div id="formContent">
+            <!-- Tabs Titles -->
+        
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="ico.jpg" id="icon" alt="User Icon" width=20% height=20%/>
+            </div>
+        
+            <!-- Login Form -->
+            <form>
+              <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+              <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+              <input type="submit" class="fadeIn fourth" value="Log In">
+            </form>
+        
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+              <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+        
+          </div>
+        </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="container">
+  <h3 class="text-center"><b>Feedback</b></h3>
+  <p class="text-center"><em>We care our Customers!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +8976543234</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: fans@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

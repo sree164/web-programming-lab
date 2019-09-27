@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+     body{
+    background-color: rgb(253, 91, 145);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+
+<ul>
+  <li><a class="active" href="car3.html">HOME</a></li>
+  <li><a href="carmodel.html">MODELS</a></li>
+  <li><a href="carabout.html">ABOUT</a></li>
+   <li><a href="contact.html">CONTACT</a></li>
+</ul>
+</br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position:relative;
+  text-align:left;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:rgb(238, 236, 236);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+select,textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+
+  border: none;
+  background: #f1f1f1;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid rgb(202, 187, 187);
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: rgb(212, 110, 14);
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+button {
+  background-color: rgb(185, 196, 185);
+  color: #a50909;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #98b0d3;
+ 
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+  margin-bottom: 4PX;
+  margin-TOP: 4PX;
+}
+
+</style>
+</head>
+<body style="background-color: rgb(243, 243, 245)">
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Complaints/feedback</h1>
+    
+    <hr>
+    <label for="name"><b>NAME</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <label>
+      <B>GENDER</B>
+    </label><BR>
+    <input type="radio"  name="m" required>MALE
+    <input type="radio"  name="m"  required>FEMALE
+    <input type="radio"  name="m"  required>OTHERS<br>
+    <br>
+
+    <label for="email" VALUE=name@gmail.com><b>E-MAIL</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="Model"><b>MDEL-TYPE</b></label>
+    <select>
+            <option value="5">MARUTI S-CROSS</option>
+            <option value="6">BALENO </option>
+            <option value="11">IGNIS</option>
+            <option value="x2">XL-6</option>
+    </select>
+    <p>
+        <b>Feedback</b>
+    </p>
+    <INPUT type="text"  name="comp" placeholder="Enter the feed back here"  WIDTH=100% HEIGHT=20PX><BR>
+     
+  </div>
+  
+  <div class="clearfix">
+    <button id="a" type="button" class="cancelbtn">Cancel</button>
+    <button type="submit" class="signupbtn">Enter  </button>
+  </div>
+</form>
+
+</body>
+</html>
